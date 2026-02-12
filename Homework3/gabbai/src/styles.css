@@ -1,0 +1,96 @@
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+}
+
+.page {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.header {
+  padding: 12px 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.subtitle {
+  font-size: 12px;
+  color: #555;
+  margin-top: 4px;
+}
+
+.activeFilterRow {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.activeFilter {
+  font-size: 12px;
+  font-weight: 600;
+  color: #8b1a1a;
+}
+
+.clearBtn {
+  border: 1px solid #ccc;
+  background: #fff;
+  border-radius: 6px;
+  font-size: 12px;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+.clearBtn:hover {
+  background: #f7f7f7;
+}
+
+.grid {
+  flex: 1;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1.1fr 1fr;
+  gap: 12px;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  min-height: 0;
+  overflow: hidden;
+  background: #fff;
+}
+
+.span2 {
+  grid-column: 1 / span 2;
+}
+
+.chartTitle {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0 0 6px 0;
+}
+
+.chartSubtitle {
+  font-size: 12px;
+  color: #555;
+  margin: 0 0 8px 0;
+}
+
+.smallNote {
+  font-size: 11px;
+  color: #666;
+  margin: 6px 0 0 0;
+}
